@@ -1,0 +1,7 @@
+
+<resources>
+    <string name="app_name">Aula_Semana_4_Mobile_interfaces</string>
+
+    <string name="titulo_perfil">Meu Perfil</string>
+    <string name="botao_salvar">Salvar Alterações</string>
+</resources>

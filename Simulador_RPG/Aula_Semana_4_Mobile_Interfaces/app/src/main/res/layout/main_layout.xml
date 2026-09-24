@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Distribuição de Pontos"
+        android:textAlignment="center"
+        android:textColor="#4D025D"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_weight="6"
+        android:src="@drawable/fairy_avatar" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Pontos Disponíveis:"
+            android:textAlignment="textEnd"
+            android:textColor="#2E0F62"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="20pt"
+            android:textAlignment="center"
+            android:textColor="#99008A"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="374dp">
+
+        <TableRow
+            android:id="@+id/pontuacaoForca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtForca"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Força: "
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numberForca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:ems="10"
+                android:inputType="number"
+                android:text="50"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/adcPontuacaoForca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnDiminuirForca"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="-"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnAumentarForca"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="+"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pontuacaoDestreza"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDestreza"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Destreza:"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numberDestreza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:ems="10"
+                android:inputType="number"
+                android:text="25"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/adcPontuacaoDestreza"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnDiminuirDestreza"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="-"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnAumentarDestreza"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="+"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pontuacaoInteligencia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtInteligencia"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Inteligência:"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numberInteligencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:ems="10"
+                android:inputType="number"
+                android:text="30"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/adcPontuacaoInteligencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnDiminuirInteligencia"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="-"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnAumentarInteligencia"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="+"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C129A1"
+        android:text="Confirmar"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
